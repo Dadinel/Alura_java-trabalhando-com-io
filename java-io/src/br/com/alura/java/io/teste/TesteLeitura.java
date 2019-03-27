@@ -1,5 +1,7 @@
 package br.com.alura.java.io.teste;
 
+import java.io.Reader;
+import java.io.InputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.BufferedReader;
@@ -9,8 +11,8 @@ public class TesteLeitura {
 
 	public static void main(String[] args) throws IOException {
 		// Fluxo de entrada com arquivo
-		FileInputStream fis = new FileInputStream("lorem.txt");
-		InputStreamReader isr = new InputStreamReader(fis);
+		InputStream fis = new FileInputStream("lorem1.txt");
+		Reader isr = new InputStreamReader(fis);
 		BufferedReader br = new BufferedReader(isr);
 
 		String linha = br.readLine();
