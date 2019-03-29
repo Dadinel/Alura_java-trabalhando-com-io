@@ -12,6 +12,7 @@ public class TesteEscrita {
 	public static void main(String[] args) throws IOException {
 		// Fluxo de saida com arquivo
 		OutputStream fos = new FileOutputStream("lorem2.txt");
+		//Writer osw = new OutputStreamWriter(fos, "UTF-8"); //Escrevendo em encode diferente
 		Writer osw = new OutputStreamWriter(fos);
 		BufferedWriter bw = new BufferedWriter(osw);
 

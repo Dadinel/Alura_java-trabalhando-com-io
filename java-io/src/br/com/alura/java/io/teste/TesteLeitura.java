@@ -13,6 +13,7 @@ public class TesteLeitura {
 		// Fluxo de entrada com arquivo
 		InputStream fis = new FileInputStream("lorem1.txt");
 		Reader isr = new InputStreamReader(fis);
+		//Reader isr = new InputStreamReader(fis, "UTF-16"); //Lendo com encode incorreto
 		BufferedReader br = new BufferedReader(isr);
 
 		String linha = br.readLine();
